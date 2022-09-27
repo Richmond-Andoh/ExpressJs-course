@@ -1,0 +1,26 @@
+<h2>JSON USER DATA</h2>
+<div class="container">
+        <table class="table table-success table-striped" id="example">
+            <thead>
+                <tr>
+                    <th>UserId</th>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Completed</th>
+                    
+                </tr>
+                <tbody>
+                    <tr>
+                        {{#each data}}
+                        <td>{{this.userId}}</td>
+                        <td>{{this.id}}</td>
+                        <td>{{this.title}}</td>
+                       <td>{{this.completed}}</td>
+                    </tr>
+                    {{/each }}
+                </tbody>
+            </thead>
+       </table>
+</div>
+
+ 

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lora', serif;
+}
+
+.down {
+    margin-top: 40px;
+}
+.down img {
+   margin: 25px;
+}
+  .footer-content {
+    border-top-left-radius: 100%;
+    margin-top: 30px;
+  }
+#modal2{
+  background-image: url(images/location.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .gifImg{
+    border-top-left-radius: 40%;
+  }
+.offer{
+  margin-top: 50px;
+}
+
+.offer .card{
+  border-radius: 50%;
+}
+
+.offer .card:hover{
+  background-color: orange;
+  transition: all 1000ms ease;
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+}
+  #modalFooter{
+    border-end-end-radius: 40%;
+  }
+
+  .chef{
+    margin-top: 30px;
+    border-radius: 50%;
+  }
+
+  #carousel-section{
+    margin-top: 50px;
+  }
+
+  #chefAbout{
+    margin-top: 30px;
+  }
+ 
+  .social-media i {
+    font-size: 30px;
+  }
+ .fa-facebook{
+    color: blue;
+  }
+  .fa-twitter{
+    color:rgb(255, 255, 255);
+  }
+  .fa-instagram{
+    color: rgb(255, 225, 0);
+  }
+

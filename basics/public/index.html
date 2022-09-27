@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <title>Restaurant-Template</title>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <!-- navbar with side-nav -->
+      <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo white-text">Meal</a>
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#" class="waves-effect waves-light btn modal-trigger red">HOME</a></li>
+                <li><a href="#modal2" class="waves-effect waves-light btn modal-trigger red" id="about">ABOUT US</a></li>
+                <li><a  href="#modal1" class="waves-effect waves-light btn modal-trigger red">MENU</a></li>
+                <li><a href="#modal3" class="waves-effect waves-light btn modal-trigger red">CONTACT</a></li>
+              </ul>
+              <ul class="side-nav red" id="slide-out">
+                  <li><a href="#" class="white-text white-text waves-effect waves-light btn modal-trigger">HOME</a></li>
+                  <li><a href="#modal1" class="white-text white-text waves-effect waves-light btn modal-trigger">ABOUT US</a></li>
+                  <li><a href="#modal1" class="white-text white-text waves-effect waves-light btn modal-trigger">MENU</a></li>
+                  <li><a href="#" class="white-text white-text waves-effect waves-light btn modal-trigger">CONTACT</a></li>
+                </ul>
+            </div>
+          </nav>
+      </div>
+
+      <!-- carousel section -->
+      <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="images/img-8.jpg" class="responsive-img"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>Welcome to <span class="red-text">Richy's</span>Restaurant Service</h3>
+                  <h5 class="light grey-text text-lighten-3">Feel confortable in our presence.</h5>
+                  
+                </div>
+              </li>
+              <li>
+                <img src="images/img-10.jpg" class="responsive-img"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Delicious Recipes</h3>
+                  <img src="images/img-11.jpg" alt="" class="responsive-img" style="width: 200px; height:200px; border-radius: 50%;">
+                  <p><a  href="#modal1" class="waves-effect waves-light btn modal-trigger red">See Our Menu</a></p>
+                </div>
+              </li>
+              <li>
+                <img src="images/img-1.jpg" class="responsive-img"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Increase Take Out Sales By 50%</h3>
+                  <h5 class="light grey-text text-lighten-3">With the largest delivery PlatForm</h5>
+                  <button class="btn red white-text">Learn More</button>
+                </div>
+              </li>
+            </ul>
+      </div>
+   
+      <!--About Modal Structure -->
+      <div id="modal2" class="modal" style="background-image: url(images/img-3.jpg); background-size: cover; background-repeat:no-repeat;">
+        <div class="grey darken-4">
+          <h2 class="center orange-text">ABOUT</h2>
+          <p class="white-text">Restaurant was founded in Blablabla. </p>
+          <p class="white-text">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Maiores atque dolore accusantium non, officiis 
+            numquam! Provident dicta exercitationem quae corporis?
+          </p>
+        </div>
+        <div class="modal-content">
+          <img src="images/gif.gif" alt="" class="responsive-img gifImg">
+          <div class="offer">
+            <div class="row center grey darken-4">
+              <h3 class="orange-text center">What We Offer</h3>
+              <div class="col s12 m4">
+                <div class="card small">
+                  <div class="card-image">
+                    <i class="material-icons medium center orange-text">shopping_cart</i>
+                  </div>
+                  <span class="card-title">Online Order</span>
+                  <div class="card-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                  <div class="card small">
+                    <div class="card-image">
+                      <i class="material-icons medium center orange-text">headset_mic</i>                    </div>
+                    <span class="card-title">24/7 Service</span>
+                    <div class="card-content">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col s12 m4">
+                <div class="card small">
+                  <div class="card-image">
+                    <i class="material-icons medium center orange-text">restaurant</i>                  </div>
+                  <span class="card-title">Quality Foods</span>
+                  <div class="card-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>  
+          <div class="container deep-orange lighten-2 center-align" id="chefAbout">
+                <h4 class="teal-text"><span class="red-text">The Chef Himself ? </span>Mr. Blablaba</h4>
+                <p class="teal-text">He cooks most of our Meals</p>
+                <img src="images/chef.jpg" alt="" class="chef">
+                <div class="carousel" id="carousel-section">
+                  <h5 class="center">The Above</h5>
+                  <i class="center-align material-icons medium red-text">arrow_downward</i>
+                  <a class="carousel-item" href="#one!"><img src="images/formagio.jpg"></a>
+                  <a class="carousel-item" href="#two!"><img src="images/bruchetta.jpg"></a>
+                  <a class="carousel-item" href="#three!"><img src="images/party-platters.jpg"></a>
+                  <a class="carousel-item" href="#four!"><img src="images/mageritta.jpg"></a>
+                  <a class="carousel-item" href="#five!"><img src="images/lasagna.jpg"></a>
+                </div>
+          </div>
+          
+        </div>
+        <div class="grey darken-4 white-text" id="modalFooter">
+          <h4 class="center">Opening Hours</h4>
+          <ul class="center">
+            <li>Monday to saturday</li>
+            <li>From 9am - 11pm each day</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- parallax-container -->
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/img-9.jpg"></div>
+      </div>
+
+
+      <!-- news section -->
+      <div class="section white">
+        <h2 class="center-align">Latest News</h2>
+        <div class="row container center">
+            <div class="col s12 m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/spa.jpg" alt="">
+                </div>
+                <span class="card-title">Online Order</span>
+                <div class="card-content">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card small">
+                  <div class="card-image">
+                    <img src="images/img-11.jpg" alt="">
+                  </div>
+                  <span class="card-title">24/7 Service</span>
+                  <div class="card-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit.
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/today's special.jpg" alt="">
+                </div>
+                <span class="card-title">24/7 Service</span>
+                <div class="card-content">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit.
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row container center">
+            <div class="col s10 m6">
+              <h4>Tasty Food For you</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, sit eaque fuga ipsum 
+                eum expedita numquam. Consequatur corrupti explicabo amet?
+              </p>
+            </div>
+            <div class="col s12 m6">
+              <h4>Eat Healthy Foods</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, sit eaque fuga ipsum 
+                eum expedita numquam. Consequatur corrupti explicabo amet?
+              </p>
+            </div>
+        </div>
+      </div>
+      
+      <!-- parallax-container -->
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/img-2.jpg"></div>
+      </div>
+
+     <!-- menu page modal structure -->
+      <div id="modal1" class="modal" style="background-image: url(images/menu.jpg); background-repeat:no-repeat; background-size: cover;">
+        <div class="modal-content">
+          <h4 class="teal-text center">OUR MENU</h4>
+
+          <!-- menu section -->
+          <section class="menu">
+            <!-- Pasta session -->
+            <h2 class="center red accent-1 white-text">Best Choice</h2>
+              <div class="row">
+                <div class="col s12 m4 small">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="images/spa.jpg" class="circle">
+                        <span class="card-title">Spaghetti Classica</span>
+                      </div>
+                      <div class="card-content">
+                        <p>Fresh tomatoes, onions, ground beef</p>
+                        <div class="btn right red white-text">$ 11.00</div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 small">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/lasagna.jpg" class="circle">
+                      <span class="card-title">Lasagna</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Special sauce, mozzarella, parmesan, ground beef</p>
+                      <div class="btn right red white-text">$ 15.50</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m4 small">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/ravioli.jpg" class="circle">
+                      <span class="card-title">Ravioli</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Ravioli filled with cheese</p>
+                      <div class="btn right red white-text">$ 14.50</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pizza section -->
+            
+            <div class="row">
+              <div class="col s12 m4 small">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/mageritta.jpg" class="circle">
+                      <span class="card-title">Magherita</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                      <div class="btn right red white-text">$ 16.00</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col s12 m4 small">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/formagio.jpg" class="circle">
+                    <span class="card-title">Formaggio</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    <div class="btn right red white-text">$ 19.50</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 small">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/meat-town.jpg" class="circle">
+                    <span class="card-title">Meat Town</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                    <div class="btn right red white-text">$ 20.50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- starters section -->
+            <div class="row">
+              <div class="col s12 m4 small">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/garlic-bread.jpg" class="circle">
+                      <span class="card-title">Magherita</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Grilled ciabatta, garlic butter, onions</p>
+                      <div class="btn right red white-text">$ 16.00</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col s12 m4 small">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/today's special.jpg" class="circle">
+                    <span class="card-title">TODAY's SPECIAL</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Verify from the waiter</p>
+                    <div class="btn right red white-text">$ 13.50</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 small">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/bruchetta.jpg" class="circle">
+                    <span class="card-title">BRUSCHETTA</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Bread with pesto, tomatoes, onion, garlic</p>
+                    <div class="btn right red white-text">$ 14.50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m4 small">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/img-6.jpg" class="circle">
+                      <span class="card-title">Delicious One</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <div class="btn right red white-text">$ 27.00</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col s12 m4 small">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/img-11.jpg" class="circle">
+                    <span class="card-title">Special For you</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <div class="btn right red white-text">$ 17.50</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m4 small">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/vegan-desert.jpg" class="circle">
+                    <span class="card-title">Vegan Desert</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="btn right red white-text">$ 23.50</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- social media platforms -->
+          <div class="social-media container center">
+            <h3 class="white-text">Follow us</h3>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedIn"></i>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">
+            <i class="material-icons red-text large">cancel</i>
+          </a>
+        </div>
+      </div>
+
+      <!-- contact modal section -->
+      <section class="contact-section">
+        <div id="modal3" class="modal white-text center-align" style="background-image: url(images/bac.jpg); background-repeat: no-repeat; background-size: cover;">
+          <div class="modal-content">
+           <div class="container">
+            <h3>Contact Us</h3>
+            <h5>How to get in touch</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, ad.</p>
+           </div>
+          </div>
+          <div class="row">
+            <div class="col m6 center-align">
+             <div class="container">
+              <h4>Address</h4>
+              <p>123 blablabla</p>
+              <p>Avenue: Califonia, USA</p>
+             </div>
+              <div class="container">
+                <h4>Phone Number</h4>
+              <p>+233 557010890</p>
+              </div>
+              <div class="container">
+                <h4>Email Address</h4>
+                <p>account@tech.com</p>
+              </div>
+              <div class="social-media container">
+                <h4 class="">Follow us</h4>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedIn"></i>
+              </div>
+            </div>
+            <div class="col m6 center-align">
+              <form class="col s12">
+                <div class="row">
+                  <h5 class="red-text">Have a question?</h5>
+                  <h4>Email Us</h4>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Telephone</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate">
+                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                  </div>
+                  
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" data-length="200"></textarea>
+                    <label for="textarea1">Your Message</label>
+                  </div>
+                  <div class="col s12">
+                    <button class="btn large orange white-text">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+          
+      </section>
+
+
+    <!-- footer section -->
+    <footer>
+      <div class="center">
+          <div class="row blue footer-content">
+            <div class="col s12 m6">
+              <img src="images/mobile.png" alt="">
+            </div>
+            <div class="col s12 m6 down">
+              <span class="orange-text">Download The</span>
+              <h4 class="white-text">Restaurant App On</h4>
+              <img src="images/app_store.png" alt="">
+              <img src="images/google_play.png" alt="">
+              <div class="btn1">
+                <button class="btn large waves-effect waves-light">Download
+                  <i class="material-icons right">download</i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="center">Free Restaurant Template <span>Design By</span> <br>
+            <a href="" class="blue-text center">Richmond Andoh</a>
+          </p>
+        </div>  
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
