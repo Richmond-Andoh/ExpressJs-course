@@ -1,4 +1,4 @@
-# todos-express-starter
+# DataTables-with-JSON-API-Express-Starter
 
 This is a starter kit for building a dataTable from JSON API with sign in functionality using
 [Express](https://expressjs.com/), [Passport](https://www.passportjs.org/) and
@@ -42,4 +42,4 @@ using this kit as a starting point.
 
 ## Credit
 
-Created by [Richmond Andoh](https://www.jaredhanson.me/)
+Created by [Richmond Andoh](https://github.com/Richmond-Andoh)
