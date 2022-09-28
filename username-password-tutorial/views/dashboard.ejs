@@ -10,8 +10,18 @@
 		<link rel="stylesheet" href="/css/app.css">
 	</head>
 	<body>
-		<div class="container">
-            <h1 class="text-center">JSON DATA / TODOS</h1>
+		<section class="todoapp container">
+	
+			<h1 class="text-center">JSON DATA / TODOS</h1>
+			
+				<ul>
+					<li>
+						<form action="/logout" method="post">
+							<button class="logout" type="submit">Sign out</button>
+						</form>
+					</li>
+				</ul>
+			
 			<table class="table table-success table-striped" id="example">
 				<thead>
 				  <tr>
@@ -33,8 +43,11 @@
 				  <% } %>
 				</tbody>
 			</table>
-		</div>
-
+			
+			
+		</section>
+			
+           
 		<footer class="info container m-auto">
 			<p>Double-click to edit a todo</p>
 			<p>Created by <a href="https://www.jaredhanson.me">Richmond Andoh</a></p>
