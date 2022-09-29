@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Express • TodoMVC</title>
 		<link rel="stylesheet" href="/css/base.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/index.css">
 		<link rel="stylesheet" href="/css/login.css">
 	</head>
@@ -15,8 +16,8 @@
 			<hr>
 			<p class="help">Don't have an account? <a href="/signup">Sign up</a></p>
 		</section>
-		<h1>Sign in</h1>
-		<form action="/login/password" method="post">
+		<h1 class="text-center">Sign in</h1>
+		<form action="/login/password" method="post" class="container">
 			<section class="container">
 				<label for="username">Username</label>
 				<input id="username" name="username" type="text" autocomplete="username" required autofocus>
@@ -27,8 +28,8 @@
 			</section>
 			<button type="submit">Sign in</button>
 		</form>
-		<footer class="info">
-			<p>Created by <a href="https://www.jaredhanson.me">Jared Hanson</a></p>
+		<footer class="info text-center mt-3">
+			<p>Created by <a href="https://www.jaredhanson.me">Richmond Andoh</a></p>
 			<p>Part of <a href="https://todomvc.com">TodoMVC</a></p>
 			<p>Authentication powered by <a href="https://www.passportjs.org">Passport</a></p>
 		</footer>
