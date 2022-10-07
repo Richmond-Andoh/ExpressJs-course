@@ -33,7 +33,7 @@ router.get('/', (req, res) => {
   if(!req.user){
     return res.render('home')
   } else{
-    res.redirect('/dashboard')
+    res.redirect('/')
   }
 })
 

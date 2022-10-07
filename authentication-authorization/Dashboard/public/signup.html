@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/superhero/bootstrap.min.css">
+
+</head>
+<body>
+    <section class="container">
+        <h3 class="text-center">User Dashboard</h3>
+        <h1 class="text-center">Sign up</h1>
+    </section>
+    <div class="container">
+        <form action="/signup" method="post">
+            <section>
+                <label for="username" class="fs-3">Username</label>
+                <input id="username" class="form-control" name="username" type="text" autocomplete="username" required>
+            </section>
+            <section>
+                <label for="new-password" class="fs-3">Password</label>
+                <input id="new-password" class="form-control" name="password" type="password" autocomplete="new-password" required>
+            </section>
+            <button type="submit" class="btn btn-lg btn-danger px-4 py-3 mt-4">Sign up</button>
+        </form>
+    </div>
+    <hr>
+    <p class="text-center">Already have an account? <a href="/login">Sign in</a></p>
+   
+    <footer class="info text-center mt-3">
+        <p>Created by Richmond Andoh</p>
+        <p>Authorization powered by <a href="https://www.espress-session.com">Passport</a></p>
+    </footer>
+</body>
+</html>
