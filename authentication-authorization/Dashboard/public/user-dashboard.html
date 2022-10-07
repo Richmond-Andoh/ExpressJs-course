@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="https://bootswatch.com/5/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <a href="/logout">Log Out</a>
 
     <div class="container" id="container">
-        <table class="table table-success table-striped" id="example">
+        <table class="table table-success table-striped" id="example" style="width: 100%;">
             <thead>
               <tr>
                 <th>UserId</th>
@@ -27,15 +27,7 @@
             </tbody>       
         </table>
     </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $('#example').DataTable();
-     });
-  </script>
+ 
     <script>
         fetch("https://jsonplaceholder.typicode.com/todos")
         .then((res) => res.json())
@@ -62,6 +54,15 @@
         })  
     </script>
 
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('#example').DataTable();
+   });
+</script>
   
 </body>
 </html>
